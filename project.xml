@@ -3,8 +3,8 @@
 	<!-- _________________________ Application Settings _________________________ -->
 	<app
 		title="FNF' - Codename Engine" main="funkin.backend.system.Main"
-		file="CodenameEnginee" packageName="com.yoshman29.codenameenginee"
-		package="com.yoshman29.codenameenginee"
+		file="CodenameEngine" packageName="com.yoshman29.codenameengine"
+		package="com.yoshman29.codenameengine"
 		version="0.1.0" company="Yoshman29" />
 
 	<!--
