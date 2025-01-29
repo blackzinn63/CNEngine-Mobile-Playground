@@ -24,14 +24,6 @@ class CharacterSelection extends EditorTreeMenu
 			for (char in (modsList.length == 0 ? Character.getList(false) : modsList))
 				new IconOption(char, "Press " + button + " to edit this character.", Character.getIconFromCharName(char),
 			 	function() {
-					#if TOUCH_CONTROLS
-					if (funkin.backend.system.Controls.instance.touchC)
-					{
-						openSubState(new UIWarningSubstate("CharacterEditor: Touch Not Supported!", "Please connect a keyboard and mouse to access this editor.", [
-							{label: "Ok", color: 0xFFFF0000, onClick: function(t) {}}
-						]));
-					} else
-					#end
 					FlxG.switchState(new CharacterEditor(char));
 				})
 		];
